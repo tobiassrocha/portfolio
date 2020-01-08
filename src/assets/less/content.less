@@ -1,3 +1,48 @@
 @import "variables.less";
 
 /* CONTENT ///////////////////////////////////////////////// */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: ~"calc(100% - 300px)";
+
+    .section {
+        display: flex;
+        padding: 65px 10%;
+    }
+    &__about-figure {
+        margin: 0 0 0 25px;
+    }
+    &__about-title {
+        font-size: 35px;
+    }
+    &__about-subtitle {
+        font-size: 25px;
+        font-weight: 100;
+        margin-bottom: 25px;
+    }
+    &__about-paragraph {
+        margin-bottom: 30px;
+    }
+    &__about-button {
+        background-color: @color-two;
+        border: 2px solid @color-two;
+
+        &:hover {
+            background-color: @color-one;
+        }
+    }
+    &__about-link {
+        color: @color-one;
+        display: block;
+        font-weight: bold;
+        min-width: 125px;
+        padding: 10px 15px;
+        text-decoration: none;
+    
+        &:hover {
+            color: @color-two;
+        }
+    }
+}
