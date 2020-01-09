@@ -8,6 +8,125 @@
  * !!! Typography !!!
  *****************************************************************************/
 /* CONTENT ///////////////////////////////////////////////// */
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - 300px);
+}
+.content .section {
+  box-sizing: border-box;
+  display: flex;
+  padding: 65px 10%;
+  width: 100%;
+}
+.content .section__title {
+  border-left: 5px solid #54B689;
+  font-size: 30px;
+  margin-bottom: 45px;
+  padding-left: 15px;
+}
+.content__about-figure {
+  margin: 0 0 0 25px;
+}
+.content__about-title {
+  font-size: 35px;
+}
+.content__about-subtitle {
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+.content__about-paragraph {
+  margin-bottom: 30px;
+}
+.content__about-button {
+  background-color: #54B689;
+  border: 2px solid #54B689;
+}
+.content__about-button:hover {
+  background-color: #f7f7f7;
+}
+.content__about-link {
+  color: #ffffff;
+  display: block;
+  font-weight: bold;
+  min-width: 125px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.content__about-link:hover {
+  color: #54B689;
+}
+.content__experience {
+  flex-direction: column;
+}
+.content__experience-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.content__experience-text {
+  background-color: #f7f7f7;
+  padding: 25px;
+  width: calc(100% - 265px);
+}
+.content__experience-company {
+  color: #54B689;
+  display: inline-block;
+  font-size: 20px;
+}
+.content__experience-period {
+  color: #847272;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+}
+.content__experience-profession {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.content__experience-description {
+  font-size: 15px;
+  line-height: 22px;
+}
+.content__experience-figure {
+  width: 140px;
+  height: 140px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px;
+  border-radius: 100%;
+}
+.content .compasso {
+  background-image: url('../images/compasso-logo.png');
+  background-size: 65%;
+  border: 2px solid #3b4a78;
+}
+.content .agfox {
+  background-image: url('../images/agfox-logo.png');
+  background-size: 65%;
+  background-color: #535353;
+}
+.content .mais-educacao {
+  background-image: url('../images/mais-educacao-logo.png');
+  background-size: 85%;
+  border: 2px solid #5894bc;
+}
+.content .ideal-tecnologia {
+  background-image: url('../images/ideal-tecnologia-logo.png');
+  background-size: 85%;
+  background-color: #070707;
+}
+.content .lojas-benni {
+  background-image: url('../images/lojas-benni-logo.png');
+  background-size: 85%;
+  border: 2px solid #d4283a;
+}
 
 @font-face {
   font-family: 'icomoon';
@@ -76,17 +195,24 @@
   padding: 25px;
   width: 300px;
   height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .header__top {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 .header__title {
   font-size: 24px;
   text-align: center;
 }
 .header__figure {
-  width: 160px;
+  width: 200px;
 }
 .header__image {
   border-radius: 100%;
@@ -120,9 +246,12 @@
   opacity: 0.8;
 }
 .header__navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 .header__navbar--list {
   margin: 0;
@@ -147,6 +276,70 @@
   margin-right: 15px;
   text-align: center;
   width: 20px;
+}
+.header .switch {
+  display: flex;
+  flex-direction: column;
+}
+.header .switch__title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.header .switch__label {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 32px;
+  margin: 0 auto;
+}
+.header .switch__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.header .switch__input:checked + .switch__slider {
+  border: 3px solid #ffffff;
+}
+.header .switch__input:checked + .switch__slider {
+  border: 3px solid #ffffff;
+}
+.header .switch__input:focus + .switch__slider {
+  box-shadow: 0 0 1px #ffffff;
+}
+.header .switch__input:checked + .switch__slider:before {
+  background-color: #ffffff;
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}
+.header .switch__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.header .switch__slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.header .switch__slider--round {
+  border-radius: 35px;
+}
+.header .switch__slider--round:before {
+  border-radius: 50%;
 }
 
 /******************************************************************************
@@ -180,10 +373,29 @@ ul {
   list-style: none;
   padding: 0;
 }
+button {
+  border: 0;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 15px;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(84, 182, 137, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
 .main {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+.bg-gray {
+  background-color: #f7f7f7;
 }
 
 /******************************************************************************
