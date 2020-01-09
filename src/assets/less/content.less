@@ -4,12 +4,22 @@
 .content {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     width: ~"calc(100% - 300px)";
 
     .section {
+        box-sizing: border-box;
         display: flex;
         padding: 65px 10%;
+        width: 100%;
+
+        &__title {
+            border-left: 5px solid @color-two;
+            font-size: 30px;
+            margin-bottom: 45px;
+            padding-left: 15px;
+        }
     }
     &__about-figure {
         margin: 0 0 0 25px;
@@ -30,7 +40,7 @@
         border: 2px solid @color-two;
 
         &:hover {
-            background-color: @color-one;
+            background-color: @color-six;
         }
     }
     &__about-link {
@@ -44,5 +54,73 @@
         &:hover {
             color: @color-two;
         }
+    }
+    &__experience {
+        flex-direction: column;
+    }
+    &__experience-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+    &__experience-text {
+        background-color: @color-six;
+        padding: 25px;
+        width: ~"calc(100% - 265px)";
+    }
+    &__experience-company {
+        color: @color-two;
+        display: inline-block;
+        font-size: 20px;
+    }
+    &__experience-period {
+        color: @color-seven;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    &__experience-profession {
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+    &__experience-description {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    &__experience-figure {
+        width: 140px;
+        height: 140px;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 15px;
+        border-radius: 100%;
+    }
+    .compasso {
+        background-image: url('../images/compasso-logo.png');
+        background-size: 65%;
+        border: 2px solid #3b4a78;
+    }
+    .agfox {
+        background-image: url('../images/agfox-logo.png');
+        background-size: 65%;
+        background-color: @color-eight;
+    }
+    .mais-educacao {
+        background-image: url('../images/mais-educacao-logo.png');
+        background-size: 85%;
+        border: 2px solid #5894bc;
+    }
+    .ideal-tecnologia {
+        background-image: url('../images/ideal-tecnologia-logo.png');
+        background-size: 85%;
+        background-color: #070707;
+    }
+    .lojas-benni {
+        background-image: url('../images/lojas-benni-logo.png');
+        background-size: 85%;
+        border: 2px solid #d4283a;
     }
 }
