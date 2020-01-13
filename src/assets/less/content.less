@@ -141,16 +141,47 @@
         background-size: 90%;
         border: 2px solid #0199dc;
     }
+    &__skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__skills-primary {
+        border-bottom: 1px solid @color-nine;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+    }
+    &__skills-secondary {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
     &__skills-circle {
         width: 150px;
         margin: 0 0 40px 0;
         position: relative;
         text-align: center;
+
+        canvas {
+            vertical-align: top;
+        }
+    }    
+    &__skills-circle-title {
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 15px;
+        text-transform: uppercase;
+
+        &:before {
+            content: attr(data-skills-title);
+        }
     }
-    &__skills-circle canvas {
-        vertical-align: top;
-    }
-    &__skills-circle strong {
+    &__skills-circle-percent {
         position: absolute;
         top: 50px;
         left: 0;
@@ -158,17 +189,46 @@
         text-align: center;
         line-height: 40px;
         font-size: 40px;
+
+        i {
+            font-style: normal;
+            font-size: 0.6em;
+            font-weight: normal;
+        }
+        &:before {
+            content: attr(data-percent-text);
+        }
     }
-    &__skills-circle strong i {
-        font-style: normal;
-        font-size: 0.6em;
-        font-weight: normal;
+    &__skills-line {
+        margin-bottom: 25px;
+        width: 48%;
     }
-    &__skills-circle span {
+    &__skills-title {
         display: block;
-        font-size: 17px;
-        font-weight: bold;
-        margin-top: 15px;
+        margin: 10px;
         text-transform: uppercase;
+
+        &:before {
+            content: attr(data-skills-title);
+        }
+    }
+    &__skills-line-percent {
+        background: @color-nine;
+        border-radius: 20px;
+        height: 35px;
+        position: relative;
+
+        &:before {
+            background: @color-two;
+            border-radius: 20px;
+            color: @color-one;
+            content: attr(data-percent-text);
+            font-weight: bold;
+            line-height: 35px;
+            text-align: center;
+            position: absolute;
+            width: var(--data-percent);
+            height: 100%;
+        }
     }
 }
