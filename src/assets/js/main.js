@@ -13,4 +13,16 @@ $(document).ready(function(){
             scrollTop: targetOffset
         }, 1000);
     });
+
+    $('.js-menu').click(function(){
+        var self = $('.teste');
+
+        if (self.hasClass('active')) {
+            self.removeClass('active');
+            self.slideUp();
+        } else {
+            self.addClass('active');
+            self.slideDown();
+        }
+    });
 });

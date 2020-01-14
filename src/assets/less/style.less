@@ -40,6 +40,10 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
+    @media (max-width: @breakpoint-md) {
+        flex-direction: column;
+    }
 }
 
 .bg-gray {

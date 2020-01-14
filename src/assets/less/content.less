@@ -57,6 +57,11 @@
         &:hover {
             color: @color-two;
         }
+        .icon-pdf {
+            font-size: 18px;
+            margin-right: 10px;
+            vertical-align: top;
+        }
     }
     &__experience {
         flex-direction: column;
@@ -69,6 +74,7 @@
     }
     &__experience-text {
         background-color: @color-six;
+        box-sizing: border-box;
         padding: 25px;
         width: ~"calc(100% - 265px)";
     }
@@ -238,7 +244,6 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 45px 0 0;
         
         .section__title {
             margin-bottom: 35px;
@@ -249,7 +254,7 @@
             margin: 55px auto;
         }
         &__list--item {
-            margin: 0 20px;
+            margin: 0 15px;
         }
         &__list--link {
             border-radius: 100%;
@@ -272,6 +277,7 @@
             font-size: 14px;
             font-style: italic;
             margin-top: 10px;
+            text-align: center;
         }
         &__copyright {
             background: @color-one;
@@ -286,6 +292,66 @@
                 color: red;
                 font-size: 22px;
                 vertical-align: sub;
+            }
+        }
+    }
+    .section.footer {
+        padding: 45px 0 0;
+    }
+
+    @media (max-width: @breakpoint-lg) {
+        .section {
+            padding: 25px 20px;
+        }
+    }
+
+    @media (max-width: @breakpoint-md) {
+        width: 100%;
+
+        &__about-figure {
+            margin: 25px auto;
+        }
+    }
+
+    @media (max-width: @breakpoint-sm) {
+        &__about {
+            flex-direction: column;
+        }
+        &__about-image {
+            max-width: 100%;
+        }
+        &__about-button {
+            width: 100%;
+        }
+        &__experience-card {
+            flex-direction: column;
+        }
+        &__experience-text {
+            margin-top: 10px;
+            width: 100%;
+        }
+        &__skills-secondary {
+            flex-direction: column;
+        }
+        &__skills-line {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .footer {
+
+            &__subtitle {
+                margin: 0 20px;
+                text-align: center;
+            }
+            &__list {
+                flex-direction: column;
+                margin: 40px auto 30px;
+            }
+            &__list--item {
+                margin-bottom: 30px;
+            }
+            &__list--link {
+                font-size: 50px;
             }
         }
     }
