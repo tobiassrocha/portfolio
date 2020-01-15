@@ -25,4 +25,19 @@ $(document).ready(function(){
             self.slideDown();
         }
     });
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.js-back-to-top').fadeIn();
+        } else {
+            $('.js-back-to-top').fadeOut();
+        }
+    });
+
+    $('.js-back-to-top').click(function(){
+        $('html, body').animate({
+            scrollTop : 0
+        },1000);
+        return false;
+    });
 });
