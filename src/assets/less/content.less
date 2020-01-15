@@ -367,3 +367,47 @@
         }
     }
 }
+
+/* DARK MODE ///////////////////////////////////////////////// */
+.dark-mode {
+    .section {
+        border-bottom: 1px solid @color-eleven;
+    }
+    .content__experience-text {
+        background-color: @color-eleven;
+    }
+    .content__experience-period {
+        color: @color-five;
+    }
+    .content__about-paragraph, .content__experience-description {
+        opacity: 0.7;
+    }
+    .content__about-button {
+        &:hover{
+            background-color: @color-twelve;
+        }
+    }
+    .content__experience-figure {
+        border: 0;
+    } 
+    .compasso, .lojas-benni, .mais-educacao, .imed, .anhanguera, .erico-verissimo {
+        background-color: @color-one;
+    }
+    .content__skills-primary {
+        border-bottom: 1px solid @color-eleven;
+    }
+    .content .footer__list--label {
+        color: @color-one;
+    }
+    .content .footer__list--link {
+        &:hover {
+            color: @color-two;
+            opacity: 0.7;
+        }
+    }
+    .content .footer__copyright {
+        background: @color-twelve;
+        border-top: 1px solid @color-eleven;
+        color: @color-one;
+    }
+}

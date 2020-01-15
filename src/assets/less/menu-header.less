@@ -179,7 +179,7 @@
         position: relative;
         width: 100%;
 
-        .teste {
+        &__container-menu {
             display: none;
         }
         &__menu-hamburguer {
@@ -198,3 +198,30 @@
     }
 }
 
+/* DARK MODE ///////////////////////////////////////////////// */
+.dark-mode {
+    .header {
+        background-color: @color-eleven;
+
+        &__navbar--link {
+            opacity: 0.7;
+
+            &:hover {
+                color: @color-two;
+                opacity: 1;
+            }
+        }
+        &__list--link {
+            background-color: @color-two;
+            color: @color-one;
+        }
+        .switch {
+            &__input:checked + .switch__slider {
+                border: 3px solid @color-two;
+            }
+            &__input:checked + .switch__slider:before {
+                background-color: @color-two;
+            }
+        }
+    }
+}

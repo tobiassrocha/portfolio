@@ -3,7 +3,8 @@ $(document).ready(function(){
     $('.content__skills-circle').circleProgress({
         animation: false,
         size: 150,
-        fill: {gradient: ["#54B689", "#69e0aa"]}
+        fill: {gradient: ["#54B689", "#69e0aa"]},
+        emptyFill: "#e5e5e5"
     });
 
     // animation main menu anchor
@@ -18,7 +19,7 @@ $(document).ready(function(){
 
     // show and hide menu mobile
     $('.js-menu').click(function(){
-        var self = $('.teste');
+        var self = $('.js-container-menu');
 
         if (self.hasClass('active')) {
             self.removeClass('active');
@@ -44,5 +45,16 @@ $(document).ready(function(){
             scrollTop : 0
         },1000);
         return false;
+    });
+
+    // change site theme
+    $('.js-change-theme').click(function(){
+        var body = $('body');
+
+        if (body.hasClass('dark-mode')) {
+            body.removeClass('dark-mode');
+        } else {
+            body.addClass('dark-mode');
+        }
     });
 });
