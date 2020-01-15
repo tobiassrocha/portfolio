@@ -1,10 +1,12 @@
 $(document).ready(function(){
+    // call to circles progress skills
     $('.content__skills-circle').circleProgress({
         animation: false,
         size: 150,
         fill: {gradient: ["#54B689", "#69e0aa"]}
     });
 
+    // animation main menu anchor
     $('.header__navbar a[href^="#"]').on('click', function(e) {
         e.preventDefault();
         var id = $(this).attr('href'),targetOffset = $(id).offset().top;
@@ -14,6 +16,7 @@ $(document).ready(function(){
         }, 1000);
     });
 
+    // show and hide menu mobile
     $('.js-menu').click(function(){
         var self = $('.teste');
 
@@ -26,6 +29,7 @@ $(document).ready(function(){
         }
     });
 
+    // function scroll back to top
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('.js-back-to-top').fadeIn();
@@ -34,6 +38,7 @@ $(document).ready(function(){
         }
     });
 
+    // function scroll back to top
     $('.js-back-to-top').click(function(){
         $('html, body').animate({
             scrollTop : 0
