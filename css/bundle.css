@@ -30,6 +30,9 @@
 .content__about-figure {
   margin: 0 0 0 25px;
 }
+.content__about-image {
+  max-width: 310px;
+}
 .content__about-title {
   font-size: 35px;
 }
@@ -59,6 +62,11 @@
 .content__about-link:hover {
   color: #54B689;
 }
+.content__about-link .icon-pdf {
+  font-size: 18px;
+  margin-right: 10px;
+  vertical-align: top;
+}
 .content__experience {
   flex-direction: column;
 }
@@ -70,6 +78,7 @@
 }
 .content__experience-text {
   background-color: #f7f7f7;
+  box-sizing: border-box;
   padding: 25px;
   width: calc(100% - 265px);
 }
@@ -127,6 +136,282 @@
   background-size: 85%;
   border: 2px solid #d4283a;
 }
+.content .imed {
+  background-image: url('../images/imed-logo.png');
+  background-size: 50%;
+  border: 2px solid #685aa4;
+}
+.content .anhanguera {
+  background-image: url('../images/anhanguera-logo.png');
+  background-size: 90%;
+  border: 2px solid #e74114;
+}
+.content .erico-verissimo {
+  background-image: url('../images/erico-verissimo-logo.jpg');
+  background-size: 90%;
+  border: 2px solid #0199dc;
+}
+.content__skills {
+  flex-direction: column;
+}
+.content__skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content__skills-primary {
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+.content__skills-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.content__skills-circle {
+  width: 150px;
+  margin: 0 0 20px 0;
+  position: relative;
+  text-align: center;
+}
+.content__skills-circle canvas {
+  vertical-align: top;
+}
+.content__skills-circle-title {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.content__skills-circle-title:before {
+  content: attr(data-skills-title);
+}
+.content__skills-circle-percent {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 40px;
+}
+.content__skills-circle-percent i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+.content__skills-circle-percent:before {
+  content: attr(data-percent-text);
+}
+.content__skills-line {
+  margin-bottom: 25px;
+  width: 48%;
+}
+.content__skills-title {
+  display: block;
+  margin: 10px;
+  text-transform: uppercase;
+}
+.content__skills-title:before {
+  content: attr(data-skills-title);
+}
+.content__skills-line-percent {
+  background: #e5e5e5;
+  border-radius: 20px;
+  height: 35px;
+  position: relative;
+}
+.content__skills-line-percent:before {
+  background: #54B689;
+  border-radius: 20px;
+  color: #ffffff;
+  content: attr(data-percent-text);
+  font-weight: bold;
+  line-height: 35px;
+  text-align: center;
+  position: absolute;
+  width: var(--data-percent);
+  height: 100%;
+}
+.content .footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.content .footer .section__title {
+  margin-bottom: 35px;
+}
+.content .footer__list {
+  display: flex;
+  justify-content: center;
+  margin: 55px auto;
+}
+.content .footer__list--item {
+  margin: 0 15px;
+}
+.content .footer__list--link {
+  border-radius: 100%;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+.content .footer__list--link:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.content .footer .icon-envelop {
+  color: #f44336;
+}
+.content .footer .icon-skype {
+  color: #1cb2e7;
+}
+.content .footer .icon-github {
+  color: #000000;
+}
+.content .footer .icon-linkedin {
+  color: #1a72b6;
+}
+.content .footer__list--label {
+  color: #000000;
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 10px;
+  text-align: center;
+}
+.content .footer__copyright {
+  background: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+.content .footer__copyright .icon-heart {
+  color: red;
+  font-size: 22px;
+  vertical-align: sub;
+}
+.content .section.footer {
+  padding: 45px 0 0;
+}
+.content .icon-cheveron-up {
+  border: 1px solid;
+  color: #54B689;
+  display: none;
+  font-size: 30px;
+  position: fixed;
+  top: 90%;
+  right: 20px;
+  text-decoration: none;
+}
+@media (max-width: 1200px) {
+  .content .section {
+    padding: 25px 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .content {
+    width: 100%;
+  }
+  .content__about-figure {
+    margin: 25px auto;
+  }
+}
+@media (max-width: 768px) {
+  .content__about {
+    flex-direction: column;
+  }
+  .content__about-image {
+    max-width: 100%;
+  }
+  .content__about-button {
+    width: 100%;
+  }
+  .content__experience-card {
+    flex-direction: column;
+  }
+  .content__experience-text {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .content__skills-secondary {
+    flex-direction: column;
+  }
+  .content__skills-line {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .content .footer__subtitle {
+    margin: 0 20px;
+    text-align: center;
+  }
+  .content .footer__list {
+    flex-direction: column;
+    margin: 40px auto 30px;
+  }
+  .content .footer__list--item {
+    margin-bottom: 30px;
+  }
+  .content .footer__list--link {
+    font-size: 50px;
+  }
+}
+/* DARK MODE ///////////////////////////////////////////////// */
+.dark-mode .section {
+  border-bottom: 1px solid #1e2a3a;
+}
+.dark-mode .content__experience-text {
+  background-color: #1e2a3a;
+}
+.dark-mode .content__experience-period {
+  color: #b3b3b3;
+}
+.dark-mode .content__about-paragraph,
+.dark-mode .content__experience-description {
+  opacity: 0.7;
+}
+.dark-mode .content__about-button:hover {
+  background-color: #111821;
+}
+.dark-mode .content__experience-figure {
+  border: 0;
+}
+.dark-mode .compasso,
+.dark-mode .lojas-benni,
+.dark-mode .mais-educacao,
+.dark-mode .imed,
+.dark-mode .anhanguera,
+.dark-mode .erico-verissimo {
+  background-color: #ffffff;
+}
+.dark-mode .content__skills-primary {
+  border-bottom: 1px solid #1e2a3a;
+}
+.dark-mode .content .footer__list--label {
+  color: #ffffff;
+}
+.dark-mode .content .footer__list--link:hover {
+  opacity: 0.7;
+}
+.dark-mode .content .footer .icon-github {
+  color: #ffffff;
+}
+.dark-mode .content .footer__copyright {
+  background: #111821;
+  border-top: 1px solid #1e2a3a;
+  color: #ffffff;
+}
 
 @font-face {
   font-family: 'icomoon';
@@ -149,6 +434,12 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-cheveron-up:before {
+  content: "\e902";
+}
+.icon-menu:before {
+  content: "\e900";
 }
 .icon-pdf:before {
   content: "\f1c1";
@@ -210,6 +501,15 @@
 .header__title {
   font-size: 24px;
   text-align: center;
+}
+.header__menu-hamburguer {
+  border: 1px solid;
+  display: none;
+  font-size: 25px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 18px;
+  z-index: 1;
 }
 .header__figure {
   width: 200px;
@@ -341,6 +641,50 @@
 .header .switch__slider--round:before {
   border-radius: 50%;
 }
+@media (max-width: 1024px) {
+  .header {
+    height: auto;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+  }
+  .header__container-menu {
+    display: none;
+  }
+  .header__menu-hamburguer {
+    display: block;
+  }
+  .header .switch {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 220px;
+  }
+  .header .switch__title {
+    margin-bottom: 0;
+  }
+}
+/* DARK MODE ///////////////////////////////////////////////// */
+.dark-mode .header {
+  background-color: #1e2a3a;
+}
+.dark-mode .header__navbar--link {
+  opacity: 0.7;
+}
+.dark-mode .header__navbar--link:hover {
+  color: #54B689;
+  opacity: 1;
+}
+.dark-mode .header__list--link {
+  background-color: #54B689;
+  color: #ffffff;
+}
+.dark-mode .header .switch__input:checked + .switch__slider {
+  border: 3px solid #54B689;
+}
+.dark-mode .header .switch__input:checked + .switch__slider:before {
+  background-color: #54B689;
+}
 
 /******************************************************************************
  * !!! Breakpoints !!!
@@ -394,8 +738,26 @@ button {
   flex-direction: row;
   justify-content: flex-end;
 }
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+  }
+}
 .bg-gray {
   background-color: #f7f7f7;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+body.dark-mode {
+  background-color: #111821;
+  color: #ffffff;
+}
+body.dark-mode .bg-gray {
+  background-color: #111821;
+}
+body.dark-mode .bg-white {
+  background-color: #1e2a3a;
 }
 
 /******************************************************************************

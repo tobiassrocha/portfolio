@@ -16,82 +16,93 @@
         <!-- HEADER -->
         <header class="header">
             <h1 class="header__title">Tobias</h1>
-<div class="header__top">
-    <figure class="header__figure">
-        <img class="header__image" src="images/logo.jpg" alt="avatar">
-    </figure>
-    <p class="header__paragraph">Olá, Meu nome é Tobias e eu sou desenvolvedor front-end. Seja bem vindo ao meu site pessoal!</p>
-    <ul class="header__list">
-        <li class="header__list--item">
-            <a href="#html" class="icon-skype header__list--link"></a>
-        </li>
-        <li class="header__list--item">
-            <a href="#html" class="icon-github header__list--link"></a>
-        </li>
-        <li class="header__list--item">
-            <a href="#html" class="icon-linkedin header__list--link"></a>
-        </li>
-    </ul>
+<span class="header__menu-hamburguer icon-menu js-menu"></span>
+<div class="header__container-menu js-container-menu">
+    <div class="header__top">
+        <figure class="header__figure">
+            <img class="header__image" src="images/logo.jpg" alt="avatar">
+        </figure>
+        <p class="header__paragraph">Olá, Meu nome é Tobias e eu sou desenvolvedor front-end. Seja bem vindo ao meu site pessoal!</p>
+        <ul class="header__list">
+            <li class="header__list--item">
+                <a href="#html" class="icon-envelop header__list--link"></a>
+            </li>
+            <li class="header__list--item">
+                <a href="#html" class="icon-skype header__list--link"></a>
+            </li>
+            <li class="header__list--item">
+                <a href="#html" class="icon-github header__list--link"></a>
+            </li>
+            <li class="header__list--item">
+                <a href="#html" class="icon-linkedin header__list--link"></a>
+            </li>
+        </ul>
+    </div>
+    <nav class="header__navbar">
+        <ul class="header__navbar--list">
+            <li class="header__navbar--item">
+                <a class="header__navbar--link" href="#about-me">
+                    <span class="icon-user header__navbar--icon"></span>
+                    <span>Sobre mim</span>
+                </a>
+            </li>
+            <li class="header__navbar--item">
+                <a class="header__navbar--link" href="#experience">
+                    <span class="icon-suitcase header__navbar--icon"></span>
+                    <span>Experiências</span>
+                </a>
+            </li>
+            <li class="header__navbar--item">
+                <a class="header__navbar--link" href="#education">
+                    <span class="icon-graduation header__navbar--icon"></span>
+                    <span>Educação</span>    
+                </a>
+            </li>
+            <li class="header__navbar--item">
+                <a class="header__navbar--link" href="#skills">
+                    <span class="icon-code header__navbar--icon"></span>
+                    <span>Habilidades</span>    
+                </a>
+            </li>
+            <li class="header__navbar--item">
+                <a class="header__navbar--link" href="#contact">
+                    <span class="icon-envelop header__navbar--icon"></span>
+                    <span>Contato</span>    
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="switch">
+        <h2 class="switch__title">Modo Dark</h2>
+        <label class="switch__label">
+            <input class="switch__input js-change-theme" type="checkbox">
+            <span class="switch__slider switch__slider--round"></span>
+        </label>
+    </section>
 </div>
-<nav class="header__navbar">
-    <ul class="header__navbar--list">
-        <li class="header__navbar--item">
-            <a class="header__navbar--link" href="#html">
-                <span class="icon-user header__navbar--icon"></span>
-                <span>Sobre mim</span>
-            </a>
-        </li>
-        <li class="header__navbar--item">
-            <a class="header__navbar--link" href="#html">
-                <span class="icon-suitcase header__navbar--icon"></span>
-                <span>Experiências</span>
-            </a>
-        </li>
-        <li class="header__navbar--item">
-            <a class="header__navbar--link" href="#html">
-                <span class="icon-graduation header__navbar--icon"></span>
-                <span>Educação</span>    
-            </a>
-        </li>
-        <li class="header__navbar--item">
-            <a class="header__navbar--link" href="#html">
-                <span class="icon-code header__navbar--icon"></span>
-                <span>Habilidades</span>    
-            </a>
-        </li>
-        <li class="header__navbar--item">
-            <a class="header__navbar--link" href="#html">
-                <span class="icon-envelop header__navbar--icon"></span>
-                <span>Contato</span>    
-            </a>
-        </li>
-    </ul>
-</nav>
-<section class="switch">
-    <h2 class="switch__title">Modo Dark</h2>
-    <label class="switch__label">
-        <input class="switch__input" type="checkbox">
-        <span class="switch__slider switch__slider--round"></span>
-    </label>
-</section>
         </header>
         
         <!-- CONTENT -->
         <div class="content">
-            <section class="section content__about bg-gray">
+            <section id="about-me" class="section content__about bg-gray">
     <div class="content__about-text">
         <h2 class="content__about-title">Tobias Rocha da Rosa</h2>
         <h3 class="content__about-subtitle">Desenvolvedor Front End</h3>
-        <p class="content__about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="content__about-paragraph">Eu sou desenvolvedor front end desde o início de 2012, quando concluí minha graduação e saí do emprego confortável que eu tinha para almejar algo na área de TI, e procurar um emprego com o que eu realmente gostava de fazer, que era programar. Nos primeiros meses trabalhando como Web Designer, já percebi que era nessa área do desenvolvimento que eu queria atuar. Desde então fiz diversos estudos relacionados à front end e venho me capacitando durante esses anos para o que o mercado necessita. A partir do final de 2015, tenho participado de diversos projetos de grandes empresas do Brasil, entre elas, Natura, Vivo, Livraria Cultura, Livelo, Farm, Animale, Divvino Liquor Store, entre outros.
+        </p>
+        
         <button type="button" class="content__about-button">
-            <a href="#html" class="content__about-link">Download CV</a>
+            <a href="./pdf/curriculum-vitae.pdf" class="content__about-link" download>
+                <span class="icon-pdf"></span>
+                <span>Download Curriculum</span>
+            </a>
         </button>
     </div>
     <figure class="content__about-figure">
-        <img class="content__about-image" src="images/logo.jpg" alt="image-perfil-content">
+        <img class="content__about-image" src="images/about-me.jpg" alt="image-perfil-content">
     </figure>
 </section>
-<section class="section content__experience">
+<section id="experience" class="section content__experience">
     <h2 class="section__title">Experiências</h2>
     <div class="content__experience-card">
         <figure class="content__experience-figure compasso"></figure>
@@ -99,7 +110,7 @@
             <h3 class="content__experience-company">Compasso Tecnologia</h3>
             <h5 class="content__experience-period">/ Novembro 2015 - atualmente</h5>
             <h4 class="content__experience-profession">Front end Developer</h4>
-            <p class="content__experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="content__experience-description">Desempenho o cargo de desenvolvedor front end, atendendo demandas com equipes multidisciplinares com a metodologia SCRUM. Minhas principais funções são: Desenvolvimento front end, definições de arquitetura front end, desenvolvedor OCC (Oracle Commerce Cloud), análise e aprovação de Pull Requests, mentoria de trainess. Minha stack atual envolve KnockoutJS, Less, Bootstrap, Javascript, Jquery, Gulp, Git entre outros.</p>
         </div>
     </div>
     <div class="content__experience-card">
@@ -107,8 +118,8 @@
         <div class="content__experience-text">
             <h3 class="content__experience-company">Agfox Agência Web</h3>
             <h5 class="content__experience-period">/ Março 2014 - Outubro 2015</h5>
-            <h4 class="content__experience-profession">Full Stack Developer Wordpress</h4>
-            <p class="content__experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h4 class="content__experience-profession">Fullstack Developer Wordpress</h4>
+            <p class="content__experience-description">Atuei como desenvolvedor Fullstack, desenvolvendo sites institucionais e e-coommerces com o CMS Wordpress. Também trabalhei dando suporte para os demais sites da agência que não envolviam a plataforma Wordpress mas que também eram desenvolvidos 100% em PHP.</p>
         </div>
     </div>
     <div class="content__experience-card">
@@ -117,7 +128,7 @@
             <h3 class="content__experience-company">Lojas Benni</h3>
             <h5 class="content__experience-period">/ Setembro 2013 - Fevereiro 2014</h5>
             <h4 class="content__experience-profession">Gestor de ecommerce</h4>
-            <p class="content__experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="content__experience-description">Atuei como Gestor de E-commerce, participando de diversas etapas do processo, entre elas: Gerenciar a loja virtual lojasbenni.com.br, cadastrar produtos, criar banners promocionais, gerenciar pedidos e logística de produtos, envio de sms marketing.</p>
         </div>
     </div>
     <div class="content__experience-card">
@@ -126,7 +137,7 @@
             <h3 class="content__experience-company">Programa Mais Educação</h3>
             <h5 class="content__experience-period">/ Março 2013 - Setembro 2013</h5>
             <h4 class="content__experience-profession">Monitor de Laboratório de Informática</h4>
-            <p class="content__experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="content__experience-description">Este trabalho foi uma espécie de voluntariado, na qual eu recebia um salário simbólico. Minhas funções eram cuidar da manutenção do laboratório e elaborar aulas de informática para os alunos das séries iniciais, relacionando o conteúdo com o que era visto em sala de aula nas matérias básicas.</p>
         </div>
     </div>
     <div class="content__experience-card">
@@ -135,12 +146,137 @@
             <h3 class="content__experience-company">Ideal Tecnologia</h3>
             <h5 class="content__experience-period">/ Abril 2012 - Agosto 2013</h5>
             <h4 class="content__experience-profession">Web Designer</h4>
-            <p class="content__experience-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="content__experience-description">No meu primeiro emprego na área de TI, atuei como Web Designer utilizando ferramentas como: Adobe Dreamweaver, Adobe Fireworks, Sublime Text, Filezilla, Mysql Workbench e gerenciadores de conteúdo em php. Minhas principais funções: Desenvolvimento de layouts com html, css e Jquery, pequenas implementações em php com mysql.</p>
         </div>
     </div>
 </section>
+<section id="education" class="section content__experience bg-gray">
+    <h2 class="section__title">Educação</h2>
+    <div class="content__experience-card">
+        <figure class="content__experience-figure imed"></figure>
+        <div class="content__experience-text bg-white">
+            <h3 class="content__experience-company">Faculdade Meridional IMED</h3>
+            <h5 class="content__experience-period">/ Abril 2012 - Agosto 2013</h5>
+            <h4 class="content__experience-profession">MBA em Desenvolvimento de Inovações Técnológicas para web</h4>
+            <p class="content__experience-description">O MBA tem como objetivo utilizar a tecnologia de ponta envolvendo processos na grande rede mundial como aplicações de comunicação e computação nas nuvens. Busca tratar de forma essencial a temática de mobilidade, identificando e criando a expectativa de desenvolvimento de aplicações móveis colaborativas.<br><br> Artigo Final: Análise de padrões de desenvolvimento na Web Semântica.</p>
+        </div>
+    </div>
+    <div class="content__experience-card">
+        <figure class="content__experience-figure anhanguera"></figure>
+        <div class="content__experience-text bg-white">
+            <h3 class="content__experience-company">Faculdade Anhanguera de Passo Fundo</h3>
+            <h5 class="content__experience-period">/ Abril 2012 - Agosto 2013</h5>
+            <h4 class="content__experience-profession">Gestão em Tecnologia da Informação</h4>
+            <p class="content__experience-description">O curso forma o profissional para coletar, selecionar, processar, armazenar, distribuir e avaliar o uso das informações em ambientes corporativos que necessitam de liderança técnica e administrativa em Tecnologia da Informação (TI). As aulas incluem disciplinas das áreas de Administração, Ciência da Informação e Informática.<br><br> Trabalho de conclusão: Aplicação desktop para gerenciamento de uma locadora. Tecnologias utilizadas: java, hibernate, postgres, interface swing.</p>
+        </div>
+    </div>
+    <div class="content__experience-card">
+        <figure class="content__experience-figure erico-verissimo"></figure>
+        <div class="content__experience-text bg-white">
+            <h3 class="content__experience-company">Escola Estadual de Ensino Médio Érico Veríssimo</h3>
+            <h5 class="content__experience-period">/ Abril 2012 - Agosto 2013</h5>
+            <h4 class="content__experience-profession">Ensino Fundamental e Médio</h4>
+            <p class="content__experience-description">Esta escola é localizada na minha cidade natal, Carazinho/RS. Estudei na instituição em questão desde a pré-escola até o terceiro ano do ensino médio, e nunca reprovei o ano.</p>
+        </div>
+    </div>
+</section>
+<section id="skills" class="section content__skills">
+    <h2 class="section__title">Habilidades</h2>
+    <div class="content__skills-container">
+        <div class="content__skills-primary">
+            <div class="content__skills-circle" data-value="0.95">
+                <strong class="content__skills-circle-percent" data-percent-text="95"><i>%</i></strong>
+                <span class="content__skills-circle-title" data-skills-title="html"></span>
+            </div>
+            <div class="content__skills-circle" data-value="0.90">
+                <strong class="content__skills-circle-percent" data-percent-text="90"><i>%</i></strong>
+                <span class="content__skills-circle-title" data-skills-title="css"></span>
+            </div>
+            <div class="content__skills-circle" data-value="0.90">
+                <strong class="content__skills-circle-percent" data-percent-text="90"><i>%</i></strong>
+                <span class="content__skills-circle-title" data-skills-title="responsive layout"></span>
+            </div>
+            <div class="content__skills-circle" data-value="0.50">
+                <strong class="content__skills-circle-percent" data-percent-text="50"><i>%</i></strong>
+                <span class="content__skills-circle-title" data-skills-title="javascript"></span>
+            </div>
+            <div class="content__skills-circle" data-value="0.40">
+                <strong class="content__skills-circle-percent" data-percent-text="40"><i>%</i></strong>
+                <span class="content__skills-circle-title" data-skills-title="php"></span>
+            </div>
+            <div class="content__skills-circle" data-value="0.80">
+                <strong class="content__skills-circle-percent" data-percent-text="80"><i>%</i></strong>
+                <span class="content__skills-circle-title" data-skills-title="wordpress"></span>
+            </div>
+        </div>
+        <div class="content__skills-secondary">
+            <div class="content__skills-line">
+                <strong class="content__skills-title" data-skills-title="git"></strong>
+                <div class="content__skills-line-percent" data-percent-text="80%" style="--data-percent: 80%"></div>
+            </div>
+            <div class="content__skills-line">
+                <strong class="content__skills-title" data-skills-title="jquery"></strong>
+                <div class="content__skills-line-percent" data-percent-text="85%" style="--data-percent: 85%"></div>
+            </div>
+            <div class="content__skills-line">
+                <strong class="content__skills-title" data-skills-title="sass"></strong>
+                <div class="content__skills-line-percent" data-percent-text="80%" style="--data-percent: 80%"></div>
+            </div>
+            <div class="content__skills-line">
+                <strong class="content__skills-title" data-skills-title="less"></strong>
+                <div class="content__skills-line-percent" data-percent-text="85%" style="--data-percent: 85%"></div>
+            </div>
+            <div class="content__skills-line">
+                <strong class="content__skills-title" data-skills-title="flexbox"></strong>
+                <div class="content__skills-line-percent" data-percent-text="80%" style="--data-percent: 80%"></div>
+            </div>
+            <div class="content__skills-line">
+                <strong class="content__skills-title" data-skills-title="gulp"></strong>
+                <div class="content__skills-line-percent" data-percent-text="50%" style="--data-percent: 50%"></div>
+            </div>
+            <div class="content__skills-line">
+                <strong class="content__skills-title" data-skills-title="bootstrap"></strong>
+                <div class="content__skills-line-percent" data-percent-text="75%" style="--data-percent: 75%"></div>
+            </div>
+            <div class="content__skills-line">
+                <strong class="content__skills-title" data-skills-title="jira, confluence, stash, bitbucket"></strong>
+                <div class="content__skills-line-percent" data-percent-text="70%" style="--data-percent: 70%"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="contact" class="section footer bg-gray">
+    <h2 class="section__title">Contato</h2>
+    <h4 class="footer__subtitle">Quer entrar em contato comigo? Você pode me encontrar por aqui:</h4>
+    <ul class="footer__list">
+        <li class="footer__list--item">
+            <a href="mailto:tobias.rochadarosa@gmail.com" class="icon-envelop footer__list--link">
+                <span class="footer__list--label">tobias.rochadarosa@gmail.com</span>
+            </a>
+        </li>
+        <li class="footer__list--item">
+            <a href="skype:tobias_rocha101?chat" class="icon-skype footer__list--link">
+                <span class="footer__list--label">tobias_rocha101</span>
+            </a>
+        </li>
+        <li class="footer__list--item">
+            <a href="https://github.com/tobiassrocha" class="icon-github footer__list--link" target="_blank">
+                <span class="footer__list--label">github.com/tobiassrocha</span>
+            </a>
+        </li>
+        <li class="footer__list--item">
+            <a href="https://www.linkedin.com/in/tobias-rocha-da-rosa" class="icon-linkedin footer__list--link" target="_blank">
+                <span class="footer__list--label">linkedin.com/in/tobias-rocha-da-rosa</span>
+            </a>
+        </li>
+    </ul>
+    <p class="footer__copyright">Desenvolvido com o <i class="icon-heart">♥</i> por Tobias Rocha da Rosa</p>
+</footer>
+<a href="#top" class="icon-cheveron-up js-back-to-top" title="voltar ao topo"></a>
         </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+    <script src="./js/main.js"></script>
 </body>
-
 </html>
