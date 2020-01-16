@@ -57,6 +57,12 @@ gulp.task('fonts', function() {
   .pipe(bs.stream())
 });
 
+gulp.task('pdf', function() {
+  gulp.src( './src/assets/pdf/**/*' )
+  .pipe(gulp.dest( './dist/pdf' ))
+  .pipe(bs.stream())
+});
+
 gulp.task('watch', function() {
   gulp.watch('./src/*.html', function() {
 		gulp.start('html')
@@ -70,10 +76,13 @@ gulp.task('watch', function() {
   gulp.watch('./src/assets/images/*', function() {
 		gulp.start('images')
   });
+  gulp.watch('./src/assets/pdf/*', function() {
+		gulp.start('pdf')
+  });
 });
 
 gulp.task('webserver', ['sync', 'watch'])
-gulp.task('build', ['html', 'less', 'js', 'images', 'fonts'])
+gulp.task('build', ['html', 'less', 'js', 'images', 'fonts', 'pdf'])
 gulp.task('default', function() {
  	runSequence('build', 'webserver')
 });
