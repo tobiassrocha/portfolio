@@ -258,8 +258,7 @@
         }
         &__list--link {
             border-radius: 100%;
-            color: #54B689;
-            font-size: 35px;
+            font-size: 45px;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -269,6 +268,18 @@
             &:hover {
                 color: rgba(0, 0, 0, 0.5);
             }
+        }
+        .icon-envelop {
+            color: #f44336;
+        }
+        .icon-skype {
+            color: #1cb2e7;
+        }
+        .icon-github {
+            color: @color-ten;
+        }
+        .icon-linkedin {
+            color: #1a72b6;
         }
         &__list--label {
             color: @color-ten;
@@ -401,9 +412,11 @@
     }
     .content .footer__list--link {
         &:hover {
-            color: @color-two;
             opacity: 0.7;
         }
+    }
+    .content .footer .icon-github {
+        color: @color-one;
     }
     .content .footer__copyright {
         background: @color-twelve;
