@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    verifyTheme();
+
     // call to circles progress skills
     $('.content__skills-circle').circleProgress({
         animation: false,
@@ -50,11 +53,28 @@ $(document).ready(function(){
     // change site theme
     $('.js-change-theme').click(function(){
         var body = $('body');
-
+        
         if (body.hasClass('dark-mode')) {
+            body.removeClass('dark-mode');
+            localStorage.setItem('tobaias-last-theme','clear');
+        } else {
+            body.addClass('dark-mode');
+            localStorage.setItem('tobaias-last-theme','dark');
+        }
+    });
+
+    // verify theme and add the correctly after refresh the page
+    function verifyTheme() {
+        var theme = localStorage.getItem('tobaias-last-theme'); 
+        var body = $('body');
+        var input = $('.js-change-theme');
+
+        if (theme == 'clear') {
             body.removeClass('dark-mode');
         } else {
             body.addClass('dark-mode');
+            input.attr('checked', 'checked');
         }
-    });
+    }
+    
 });
